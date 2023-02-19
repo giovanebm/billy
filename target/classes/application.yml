@@ -1,0 +1,16 @@
+server:
+  servlet:
+    context-path: /api
+spring:
+  application:
+    name: billy
+  datasource:
+    url: jdbc:mysql://localhost:3306/billy
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+springdoc:
+  swagger-ui:
+    path: '/swagger-ui.html'
