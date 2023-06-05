@@ -11,6 +11,11 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
+  flyway:
+    user: root
+    password: root
+    locations: classpath:db/migration
+    baseline-on-migrate: true
 springdoc:
   swagger-ui:
     path: '/swagger-ui.html'
